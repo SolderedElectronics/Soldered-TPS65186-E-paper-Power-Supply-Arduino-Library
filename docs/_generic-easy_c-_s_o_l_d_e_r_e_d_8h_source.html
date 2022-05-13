@@ -90,30 +90,45 @@ $(document).ready(function(){initNavTree('_generic-easy_c-_s_o_l_d_e_r_e_d_8h_so
 </div><!--header-->
 <div class="contents">
 <a href="_generic-easy_c-_s_o_l_d_e_r_e_d_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef __SENSOR__</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define __SENSOR__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef __TPS65186__</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define __TPS65186__</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;Arduino.h&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="easy_c_8hpp.html">libs/Generic-easyC/easyC.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_sensor.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_sensor.html">Sensor</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_easy_c.html">EasyC</a></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="class_sensor.html#a2b8ea6b15267f6fa0e263f57a09f6b62">Sensor</a>(<span class="keywordtype">int</span> _pin);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sensor.html#adb537c76173019fddf84b2d89e6c6559">initializeNative</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_sensor.html#a0efecf34431610766469857f25e113da">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_sensor.html#a0efecf34431610766469857f25e113da">pin</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define V3P3   1&lt;&lt;5</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define VCOM   1&lt;&lt;4</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define VDDH   1&lt;&lt;3</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define VPOS   1&lt;&lt;2</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define VEE    1&lt;&lt;1</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define VNEG   1&lt;&lt;0</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define V1500 011</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define V1475 100</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define V1450 101</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define V1425 110</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_t_p_s65186.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="class_t_p_s65186.html">TPS65186</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_easy_c.html">EasyC</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="class_t_p_s65186.html#a660a1e89b5acee1b2671b2c0c71ccf1d">TPS65186</a>(<span class="keywordtype">int</span> _pin);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_t_p_s65186.html#a359a85f7f4876a6174f2dae8d28ded49">initializeNative</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_t_p_s65186.html#ad134820564ec908bfcc1842df7824fc1">begin</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_t_p_s65186.html#afc1bc27c7cd54c758e37b2597cf190af">   41</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_t_p_s65186.html#afc1bc27c7cd54c758e37b2597cf190af">pin</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_easy_c_html"><div class="ttname"><a href="class_easy_c.html">EasyC</a></div><div class="ttdef"><b>Definition:</b> easyC.hpp:22</div></div>
-<div class="ttc" id="aclass_sensor_html"><div class="ttname"><a href="class_sensor.html">Sensor</a></div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.h:19</div></div>
-<div class="ttc" id="aclass_sensor_html_a0efecf34431610766469857f25e113da"><div class="ttname"><a href="class_sensor.html#a0efecf34431610766469857f25e113da">Sensor::pin</a></div><div class="ttdeci">int pin</div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.h:27</div></div>
-<div class="ttc" id="aclass_sensor_html_a2b8ea6b15267f6fa0e263f57a09f6b62"><div class="ttname"><a href="class_sensor.html#a2b8ea6b15267f6fa0e263f57a09f6b62">Sensor::Sensor</a></div><div class="ttdeci">Sensor(int _pin)</div><div class="ttdoc">Sensor specific native constructor.</div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.cpp:20</div></div>
-<div class="ttc" id="aclass_sensor_html_adb537c76173019fddf84b2d89e6c6559"><div class="ttname"><a href="class_sensor.html#adb537c76173019fddf84b2d89e6c6559">Sensor::initializeNative</a></div><div class="ttdeci">void initializeNative()</div><div class="ttdoc">Overloaded function for virtual in base class to initialize sensor specific.</div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.cpp:29</div></div>
+<div class="ttc" id="aclass_t_p_s65186_html"><div class="ttname"><a href="class_t_p_s65186.html">TPS65186</a></div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.h:32</div></div>
+<div class="ttc" id="aclass_t_p_s65186_html_a359a85f7f4876a6174f2dae8d28ded49"><div class="ttname"><a href="class_t_p_s65186.html#a359a85f7f4876a6174f2dae8d28ded49">TPS65186::initializeNative</a></div><div class="ttdeci">void initializeNative()</div><div class="ttdoc">Overloaded function for virtual in base class to initialize sensor specific.</div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.cpp:29</div></div>
+<div class="ttc" id="aclass_t_p_s65186_html_a660a1e89b5acee1b2671b2c0c71ccf1d"><div class="ttname"><a href="class_t_p_s65186.html#a660a1e89b5acee1b2671b2c0c71ccf1d">TPS65186::TPS65186</a></div><div class="ttdeci">TPS65186(int _pin)</div><div class="ttdoc">Sensor specific native constructor.</div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.cpp:20</div></div>
+<div class="ttc" id="aclass_t_p_s65186_html_ad134820564ec908bfcc1842df7824fc1"><div class="ttname"><a href="class_t_p_s65186.html#ad134820564ec908bfcc1842df7824fc1">TPS65186::begin</a></div><div class="ttdeci">bool begin()</div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.cpp:34</div></div>
+<div class="ttc" id="aclass_t_p_s65186_html_afc1bc27c7cd54c758e37b2597cf190af"><div class="ttname"><a href="class_t_p_s65186.html#afc1bc27c7cd54c758e37b2597cf190af">TPS65186::pin</a></div><div class="ttdeci">int pin</div><div class="ttdef"><b>Definition:</b> Generic-easyC-SOLDERED.h:41</div></div>
 <div class="ttc" id="aeasy_c_8hpp_html"><div class="ttname"><a href="easy_c_8hpp.html">easyC.hpp</a></div><div class="ttdoc">Basic funtions for easyC libraries.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -123,7 +138,7 @@ $(document).ready(function(){initNavTree('_generic-easy_c-_s_o_l_d_e_r_e_d_8h_so
     <ul>
         <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_generic-easy_c-_s_o_l_d_e_r_e_d_8h.html">Generic-easyC-SOLDERED.h</a></li>
         <li class="footer">
-            Generated on Fri May 13 2022 08:30:15 for 16x2 easyC LCD Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Fri May 13 2022 09:32:11 for 16x2 easyC LCD Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.3.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
