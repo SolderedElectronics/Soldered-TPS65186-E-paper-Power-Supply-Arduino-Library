@@ -65,7 +65,6 @@ bool TPS65186::voltageAdjust(int voltage)
 }
 
 
-
 /*
     Wire.beginTransmission(0x48);
     Wire.write(0x09);
