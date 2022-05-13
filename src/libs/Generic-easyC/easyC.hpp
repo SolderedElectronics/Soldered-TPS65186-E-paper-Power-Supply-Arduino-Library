@@ -64,7 +64,7 @@ public:
     int err;
 
     char address;
-    const char defaultAddress = 0x30;
+    const char defaultAddress = 0x48;
 
     /**
      * @brief                Private function to send a single byte to sensor
