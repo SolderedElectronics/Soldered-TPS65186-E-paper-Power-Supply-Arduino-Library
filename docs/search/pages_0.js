@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['naziv_20proizvoda_20arduino_20library_0',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]]
+  ['tps65186_20power_20supply_20arduino_20library_0',['TPS65186 Power Supply Arduino library',['../index.html',1,'']]]
 ];

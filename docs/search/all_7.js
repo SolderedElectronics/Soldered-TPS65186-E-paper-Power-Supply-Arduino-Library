@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_t_p_s65186.html#afc1bc27c7cd54c758e37b2597cf190af',1,'TPS65186']]]
+  ['readdata_0',['readData',['../class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a',1,'EasyC']]],
+  ['readme_2emd_1',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['readregister_2',['readRegister',['../class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376',1,'EasyC']]]
 ];

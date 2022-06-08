@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]],
-  ['naziv_20proizvoda_20arduino_20library_1',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]]
+  ['pin_0',['pin',['../class_t_p_s65186.html#afc1bc27c7cd54c758e37b2597cf190af',1,'TPS65186']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tps65186_0',['TPS65186',['../class_t_p_s65186.html#a660a1e89b5acee1b2671b2c0c71ccf1d',1,'TPS65186']]]
+  ['readdata_0',['readData',['../class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a',1,'EasyC']]],
+  ['readregister_1',['readRegister',['../class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376',1,'EasyC']]]
 ];
