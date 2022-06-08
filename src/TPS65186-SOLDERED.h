@@ -1,12 +1,12 @@
 /**
  **************************************************
  *
- * @file        Generic-easyC-SOLDERED.h
+ * @file        TPS65186-SOLDERED.h
  * @brief       Header file for sensor specific code.
  *
  *
  * @copyright GNU General Public License v3.0
- * @authors     @ soldered.com
+ * @authors     Goran Juric @ soldered.com
  ***************************************************/
 
 #ifndef __TPS65186__
@@ -36,6 +36,11 @@ class TPS65186 : public EasyC
   protected:
     void initializeNative();
     bool begin();
+    bool enableRail(int rail);
+    bool disableRail(int rail);
+    bool voltageAdjust(int voltage);
+    bool standbyMode();
+    bool activeMode();
 
   private:
     int pin;

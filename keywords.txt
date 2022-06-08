@@ -6,12 +6,30 @@
 # Datatypes (KEYWORD1)
 ##################################################
 
+TPS65186 KEYWORD1
+
 ##################################################
 # Methods and Functions (KEYWORD2)
 ##################################################
 
 begin	KEYWORD2
+enableRail KEYWORD2
+disableRail KEYWORD2
+voltageAdjust KEYWORD2
+standbyMode KEYWORD2
+activeMode KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
 ##################################################
+
+V3P3  LITERAL1
+VCOM  LITERAL1
+VDDH  LITERAL1
+VPOS  LITERAL1
+VEE   LITERAL1
+VNEG  LITERAL1
+V1500 LITERAL1
+V1475 LITERAL1
+V1450 LITERAL1
+V1425 LITERAL1

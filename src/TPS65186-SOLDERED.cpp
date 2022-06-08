@@ -1,16 +1,16 @@
 /**
  **************************************************
  *
- * @file        Generic-easyC-SOLDERED.cpp
+ * @file        TPS65186-SOLDERED.cpp
  * @brief       Example functions to overload in base class.
  *
  *
  * @copyright GNU General Public License v3.0
- * @authors     @ soldered.com
+ * @authors     Goran Juric @ soldered.com
  ***************************************************/
 
 
-#include "Generic-easyC-SOLDERED.h"
+#include "TPS65186-SOLDERED.h"
 
 /**
  * @brief                   Sensor specific native constructor.
@@ -62,52 +62,21 @@ bool TPS65186::voltageAdjust(int voltage)
     Wire.beginTransmission(0x48);
     Wire.write(0x0);
     Wire.write(voltage);
+    return !(Wire.endTransmission());
 }
 
-
-/*
-    Wire.beginTransmission(0x48);
-    Wire.write(0x09);
-    Wire.write(B00011011); // Power up seq.
-    Wire.write(B00000000); // Power up delay (3mS per rail)
-    Wire.write(B00011011); // Power down seq.
-    Wire.write(B00000000); // Power down delay (6mS per rail)
-    Wire.endTransmission();
-
-
- // Put TPS65186 into standby mode (leaving 3V3 SW active)
-    VCOM_CLEAR;
+bool TPS65186::standbyMode()
+{
     Wire.beginTransmission(0x48);
     Wire.write(0x01);
     Wire.write(0x6f);
-    Wire.endTransmission();
+    return !(Wire.endTransmission());
+}
 
-    // Wait for all PWR rails to shut down
-    delay(100);
-
-    // Disable 3V3 to the panel
-    Wire.beginTransmission(0x48);
-    Wire.write(0x01);
-    Wire.write(0x4f);
-    Wire.endTransmission();
-
-     // Enable all rails
-    Wire.beginTransmission(0x48);
-    Wire.write(0x01);
-    Wire.write(B00101111);
-    Wire.endTransmission();
-
-    // Modify power up sequence  (VEE and VNEG are swapped)
-    Wire.beginTransmission(0x48);
-    Wire.write(0x09);
-    Wire.write(B11100001);
-    Wire.endTransmission();
-
-    delay(1);
-
-    // Switch TPS65186 into active mode
+bool TPS65186::activeMode()
+{
     Wire.beginTransmission(0x48);
     Wire.write(0x01);
     Wire.write(B10101111);
-    Wire.endTransmission();
-*/
+    return !(Wire.endTransmission());
+}
