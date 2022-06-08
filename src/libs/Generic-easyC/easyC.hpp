@@ -15,9 +15,6 @@
 #include "Arduino.h"
 #include "Wire.h"
 
-#define ANALOG_READ_REG 0
-#define DIGITAL_READ_REG 1
-
 class EasyC
 {
 public:

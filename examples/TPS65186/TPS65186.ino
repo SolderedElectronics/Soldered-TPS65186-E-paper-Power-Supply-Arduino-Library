@@ -1,7 +1,7 @@
 /**
  **************************************************
  *
- * @file        Template.ino
+ * @file        TPS65186.ino
  * @brief       Example template for easyC sensors
  *
  *
@@ -9,7 +9,7 @@
  * @authors     @ soldered.com
  ***************************************************/
 
-#include "Generic-easyC-SOLDERED.h"
+#include "TPS65186-SOLDERED.h"
 
 void setup()
 {
