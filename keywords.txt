@@ -18,6 +18,15 @@ disableRail KEYWORD2
 voltageAdjust KEYWORD2
 standbyMode KEYWORD2
 activeMode KEYWORD2
+thermistorRead KEYWORD2
+setPowerUpSequence KEYWORD2
+setPowerDownSequence KEYWORD2
+setPowerUpDelays KEYWORD2
+setPowerDownDelays KEYWORD2
+enableAllRails KEYWORD2
+readPowerGood KEYWORD2
+setThermistorThresholds KEYWORD2
+setVCOM KEYWORD2
 
 ##################################################
 # Constants (LITERAL1)
