@@ -50,7 +50,7 @@ class TPS65186 : public EasyC
     void setPowerUpSequence(byte, byte, byte, byte);
     void setPowerDownSequence(byte, byte, byte, byte);
     void setPowerUpDelays(byte, byte, byte, byte);
-    void setPowerDownDelays(byte, byte, byte, byte);    
+    void setPowerDownDelays(byte, byte, byte, byte);
     void setThermistorThresholds(byte, byte);
     void setVCOM(int, bool);
     byte readPowerGood();
