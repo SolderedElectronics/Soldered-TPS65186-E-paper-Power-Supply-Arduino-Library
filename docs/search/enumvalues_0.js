@@ -9,7 +9,5 @@ var searchData=
   ['vddh_6',['VDDH',['../_t_p_s65186-_s_o_l_d_e_r_e_d_8h.html#ace517796d7651b91d5b68a7c05bd1571a184d0d8810ed2c18c8fb63d266a02502',1,'TPS65186-SOLDERED.h']]],
   ['vee_7',['VEE',['../_t_p_s65186-_s_o_l_d_e_r_e_d_8h.html#ace517796d7651b91d5b68a7c05bd1571a098e0addf2c423d4430f012568fdcfad',1,'TPS65186-SOLDERED.h']]],
   ['vneg_8',['VNEG',['../_t_p_s65186-_s_o_l_d_e_r_e_d_8h.html#ace517796d7651b91d5b68a7c05bd1571acee6c4b2251814213ff2980c48445896',1,'TPS65186-SOLDERED.h']]],
-  ['voltageadjust_9',['voltageAdjust',['../class_t_p_s65186.html#a1033c6edd49b3f87b57e7285eecba79f',1,'TPS65186']]],
-  ['voltageadjust_5ft_10',['voltageAdjust_t',['../_t_p_s65186-_s_o_l_d_e_r_e_d_8h.html#a55cc35d9a126cd785356fb9233d73be8',1,'TPS65186-SOLDERED.h']]],
-  ['vpos_11',['VPOS',['../_t_p_s65186-_s_o_l_d_e_r_e_d_8h.html#ace517796d7651b91d5b68a7c05bd1571a24bbde618c31ea598a5360bcc0b58af6',1,'TPS65186-SOLDERED.h']]]
+  ['vpos_9',['VPOS',['../_t_p_s65186-_s_o_l_d_e_r_e_d_8h.html#ace517796d7651b91d5b68a7c05bd1571a24bbde618c31ea598a5360bcc0b58af6',1,'TPS65186-SOLDERED.h']]]
 ];
