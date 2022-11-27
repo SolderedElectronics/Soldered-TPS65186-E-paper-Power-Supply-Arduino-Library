@@ -5,8 +5,8 @@
  * @brief       Basic funtions for easyC libraries
  *
  *
- * @copyright GNU General Public License v3.0
- * @authors     Goran Juric @ soldered.com
+ * @copyright   GNU General Public License v3.0
+ * @authors     Goran Juric, Karlo Leksic for soldered.com
  ***************************************************/
 
 #ifndef __EASYC__
@@ -60,17 +60,17 @@ public:
 
     int err;
 
-    char address;
-    const char defaultAddress = 0x48;
+    byte address;
+    const byte defaultAddress = 0x48;
 
     /**
      * @brief                Private function to send a single byte to sensor
      *
-     * @param  char regAddr  Address of register to access later
+     * @param  byte regAddr  Address of register to access later
      *
      * @return int           Standard endTransmission error codes
      */
-    int sendAddress(char regAddr)
+    int sendAddress(byte regAddr)
     {
         Wire.beginTransmission(address);
         Wire.write(regAddr);
@@ -81,12 +81,12 @@ public:
     /**
      * @brief           Private function to read n bytes over i2c
      *
-     * @param  char a[] Array to read data to
+     * @param  byte a[] Array to read data to
      * @param  int n    Number of bytes to read
      *
      * @return int      Error code, always 0
      */
-    int readData(char a[], int n)
+    int readData(byte a[], int n)
     {
         Wire.requestFrom(address, n);
         Wire.readBytes(a, n);
@@ -97,13 +97,13 @@ public:
     /**
      * @brief                   Private function to send over i2c and then read n bytes
      *
-     * @param char regAddr      Address of register to access data from
-     * @param char a            Array to put data in
+     * @param byte regAddr      Address of register to access data from
+     * @param byte a            Array to put data in
      * @param size_t n          Size of data to read
      *
      * @return int              0 if read successfuly, error code from endTransmission if not
      */
-    int readRegister(char regAddr, char a[], size_t n)
+    int readRegister(byte regAddr, byte a[], size_t n)
     {
         if (sendAddress(regAddr))
             return err;
@@ -117,7 +117,7 @@ public:
     /**
      * @brief           Private function to write n bytes over i2c
      *
-     * @param char a[]  Array to read data from
+     * @param byte a[]  Array to read data from
      * @param int n     Number of bytes to read
      *
      * @return int       Standard endTransmission error codes
